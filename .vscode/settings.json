@@ -1,0 +1,10 @@
+{
+  "prettier.tabWidth": 4,
+  "prettier.singleQuote": true,
+  "prettier.endOfLine": "auto",
+  "prettier.trailingComma": "all",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.configPath": ".prettierrc",
+  "prettier.useEditorConfig": false,
+  "editor.formatOnSave": true
+}
