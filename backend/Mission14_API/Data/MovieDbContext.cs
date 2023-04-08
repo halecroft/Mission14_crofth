@@ -2,7 +2,7 @@
 
 namespace Mission14_API.Data
 {
-    public class MovieDbContext : DbContext
+    public class MovieDbContext : DbContext //Standard Db context setup
     {
         public MovieDbContext (DbContextOptions<MovieDbContext> options) : base(options) { }
 

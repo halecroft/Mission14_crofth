@@ -6,8 +6,9 @@ function MovieList() {
   const [movieData, setMovieData] = useState<Movie[]>([]);
 
   useEffect(() => {
+    //useEffect implementation to reduce API calls
     const fetchMovies = async () => {
-      const rsp = await fetch('https://localhost:4000/movie');
+      const rsp = await fetch('https://localhost:4000/movie'); //API url is hardcoded, requires running the backend project as well
       const temp = await rsp.json();
       setMovieData(temp);
     };
@@ -16,6 +17,7 @@ function MovieList() {
   }, []);
 
   return (
+    //"margined" class below is custom css class from App.css that just adds a small margin on the left side, so things aren't right up against the edge of the page
     <>
       <div className="margined">
         <h2>Movie List</h2>

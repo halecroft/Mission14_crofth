@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MovieDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("MovieDbConnection"))
+    options.UseSqlite(builder.Configuration.GetConnectionString("MovieDbConnection")) //Db connection
 );
 builder.Services.AddCors();
 
@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(p => p.WithOrigins("http://localhost:3000"));
+app.UseCors(p => p.WithOrigins("http://localhost:3000")); //Cors url is hardcoded to frontend project
 
 app.UseHttpsRedirection();
 

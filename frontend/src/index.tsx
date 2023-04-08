@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './Home';
 import Podcasts from './Podcasts';
-import MovieList from './movies/MovieList';
+import MovieList from './movies/MovieList'; //Pulling MovieList from the new page with the api, instead of the old one with the static data file
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

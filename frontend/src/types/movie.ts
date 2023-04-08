@@ -9,3 +9,5 @@ export type Movie = {
   lentTo: string;
   notes: string;
 };
+
+//React Model for movies
